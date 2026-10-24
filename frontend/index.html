@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <main class="game-container">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+            <p>Play against an intelligent AI.</p>
+        </header>
+
+        <section class="game-card">
+            <div class="status-row">
+                <span id="status">Your turn — X</span>
+                <span class="badge" id="game-state">Playing</span>
+            </div>
+
+            <div class="board" id="board">
+                <button class="cell" data-index="0" aria-label="Cell 1"></button>
+                <button class="cell" data-index="1" aria-label="Cell 2"></button>
+                <button class="cell" data-index="2" aria-label="Cell 3"></button>
+                <button class="cell" data-index="3" aria-label="Cell 4"></button>
+                <button class="cell" data-index="4" aria-label="Cell 5"></button>
+                <button class="cell" data-index="5" aria-label="Cell 6"></button>
+                <button class="cell" data-index="6" aria-label="Cell 7"></button>
+                <button class="cell" data-index="7" aria-label="Cell 8"></button>
+                <button class="cell" data-index="8" aria-label="Cell 9"></button>
+            </div>
+
+            <div class="scoreboard">
+                <div class="score">
+                    <strong id="human-score">0</strong>
+                    <span>Your Wins</span>
+                </div>
+                <div class="score">
+                    <strong id="ai-score">0</strong>
+                    <span>AI Wins</span>
+                </div>
+                <div class="score">
+                    <strong id="draw-score">0</strong>
+                    <span>Draws</span>
+                </div>
+            </div>
+
+            <button class="new-game" id="new-game">New Game</button>
+            <button class="reset-score" id="reset-score">Reset Score</button>
+        </section>
+
+        <footer>Human vs AI · Powered by Minimax</footer>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
